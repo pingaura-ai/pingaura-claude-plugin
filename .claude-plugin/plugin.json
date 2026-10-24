@@ -7,7 +7,10 @@
     "name": "PingAura AI Technologies Private Limited",
     "url": "https://www.pingaura.ai"
   },
-  "homepage": "https://www.pingaura.ai/docs/mcp/mcp-server",
+  "homepage": "https://www.pingaura.ai",
+  "documentationUrl": "https://www.pingaura.ai/docs/mcp/mcp-server",
+  "supportUrl": "https://www.pingaura.ai/contact",
+  "termsOfServiceUrl": "https://www.pingaura.ai/terms-of-service",
   "repository": "https://github.com/pingaura-ai/pingaura-claude-plugin",
   "license": "MIT",
   "privacyPolicyUrl": "https://www.pingaura.ai/privacy-policy",
