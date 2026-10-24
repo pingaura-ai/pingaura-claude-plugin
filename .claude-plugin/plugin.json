@@ -1,0 +1,15 @@
+{
+  "name": "pingaura",
+  "displayName": "PingAura",
+  "version": "1.0.0",
+  "description": "Track and improve how your brand appears in AI answers. Report AI visibility across ChatGPT, Gemini, Perplexity, Claude, Copilot, Grok, DeepSeek and Google AI Overviews, benchmark competitors, triage site health issues that block AI citation, and manage the prompts you track, using your PingAura workspace.",
+  "author": {
+    "name": "PingAura AI Technologies Private Limited",
+    "url": "https://www.pingaura.ai"
+  },
+  "homepage": "https://www.pingaura.ai/docs/mcp/mcp-server",
+  "repository": "https://github.com/pingaura-ai/pingaura-claude-plugin",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://www.pingaura.ai/privacy-policy",
+  "keywords": ["ai-visibility", "geo", "aeo", "seo", "brand-monitoring", "marketing", "analytics"]
+}
