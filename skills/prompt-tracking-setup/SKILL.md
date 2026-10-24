@@ -12,6 +12,6 @@ Help the user track the right questions in PingAura.
    - Create missing topics with `create-prompt-topic`.
    - Add each prompt with `create-prompt`, in the right topic.
    - Move existing prompts with `move-prompt-to-topic`, and rename topics with `update-prompt-topic`.
-5. To clean up, archive prompts the user no longer wants with `archive-prompt` (they can be brought back with `restore-prompt`). Delete a topic with `delete-prompt-topic` only when the user asks, and say what happens to its prompts first.
+5. To clean up, archive prompts the user no longer wants with `archive-prompt` (they can be brought back with `restore-prompt`). Delete a topic with `delete-prompt-topic` only when the user asks. A topic can only be deleted once it holds no prompts, archived ones included, so move its prompts to another topic first.
 
 Tell the user that new prompts are included from the next visibility run, and check `get-quota-usage` if they are close to their plan's prompt limit.

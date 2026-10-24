@@ -6,14 +6,15 @@ description: Compare a brand with its competitors in AI answers using PingAura. 
 Show where competitors win AI answers and what the brand can do about it.
 
 1. Pick the domain with `list-domains`, then list tracked competitors with `list-competitors`.
-2. Rank the field. Call `compare-visibility-runs` for the two most recent runs with `include_competitors` set, so each competitor gets a Rank, Mention Rate and Share of Voice next to the brand.
-3. Find the gaps. Call `get-prompt-scores` for the domain with `order` set to `score_asc` and collect the low-scoring prompts where competitors are mentioned and the brand is not. Group them by topic with `list-prompt-topics` when topics exist.
-4. Spot newcomers. If `get-visibility-summary` for the latest run shows brands that are not in the tracked list but appear often, mention them and offer to track them.
+2. Pick the runs. Call `list-visibility-runs` with `one_per_day` set and take the two most recent days. If an engine has `answered` 0 in either run's `engine_shortfall`, say that the comparison excludes it or compare per engine.
+3. Rank the field. Call `compare-visibility-runs` for those runs with a `non_branded` slice and `include_competitors` set, so each competitor gets a Rank, Mention Rate and Share of Voice next to the brand.
+4. Find the gaps. Call `get-prompt-scores` with `order` set to `score_asc` to list the prompts where the brand scores lowest. Group them by topic with `list-prompt-topics` when topics exist. To see which competitors lead a topic, add a slice with that `topic_id` to `compare-visibility-runs`.
+5. Spot brands that aren't tracked. `get-visibility-summary` for the latest run lists the brands and sites AI answers mention most. Some are not competitors but cited sources such as search engines, forums or blogs, often with a `mention_count` of 0. Only suggest tracking a brand that sells a competing product and is mentioned in answers.
 
 Present:
 
 - A ranking table: brand and competitors with Rank, Mention Rate and Share of Voice, and the change since the previous run.
-- The three biggest gaps: prompts or topics where competitors appear and the brand does not, with the competitors named.
+- The three biggest gaps: prompts or topics where the brand scores lowest, with the competitors that lead those topics.
 - Suggested actions: content or pages that would answer those prompts.
 
 Changing the tracked list:
