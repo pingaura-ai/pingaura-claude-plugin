@@ -6,7 +6,7 @@ Track and improve how your brand appears in AI answers, from a conversation with
 
 ## What's included
 
-- **PingAura connector**: the remote MCP server at `https://www.pingaura.ai/api/mcp`, with tools for AI visibility scores and runs, competitors, tracked prompts and topics, site health audits, articles and hosted pages.
+- **PingAura connector**: the remote MCP server at `https://www.pingaura.ai/api/mcp`, with tools for AI visibility scores and runs, competitors, tracked prompts and topics, site health audits, articles, hosted pages and ChatGPT Ads reporting. Each tool describes what it returns and which related tool fits a different question, so Claude can pick the right one.
 - **Skills**:
   - `ai-visibility-report`: a short AI visibility report with the score, the change since the last run, a breakdown by AI engine, and the prompts where your brand is missing.
   - `competitor-gap-analysis`: ranks your brand against competitors and finds the questions where they win.
