@@ -17,6 +17,8 @@ Present:
 - The three biggest gaps: prompts or topics where the brand scores lowest, with the competitors that lead those topics.
 - Suggested actions: content or pages that would answer those prompts.
 
+If a competitor figure comes back empty, say it isn't available for this workspace rather than treating it as zero.
+
 Changing the tracked list:
 
 - To start tracking a brand, call `add-competitor` after the user confirms the name and domain.
