@@ -10,6 +10,7 @@
   "homepage": "https://www.pingaura.ai",
   "repository": "https://github.com/pingaura-ai/pingaura-claude-plugin",
   "license": "MIT",
+  "privacyPolicyUrl": "https://www.pingaura.ai/privacy-policy",
   "keywords": [
     "ai-visibility",
     "geo",
